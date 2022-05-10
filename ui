@@ -133,7 +133,7 @@ end
 -- // main
 function library:new(props)
 	-- // properties
-	local text = props.textsize or props.TextSize or props.textSize or props.Textsize or 12
+	local textsize = props.textsize or props.TextSize or props.textSize or props.Textsize or 12
 	local font = props.font or props.Font or "RobotoMono"
 	local name = props.name or props.Name or props.UiName or props.Uiname or props.uiName or props.username or props.Username or props.UserName or props.userName or "new ui"
 	local color = props.color or props.Color or props.mainColor or props.maincolor or props.MainColor or props.Maincolor or props.Accent or props.accent or Color3.fromRGB(225, 58, 81)
@@ -162,7 +162,7 @@ function library:new(props)
 			BackgroundColor3 = color,
 			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderSizePixel = 1,
-			Size = UDim2.new(0,400,0,500),
+			Size = UDim2.new(0,500,0,650),
 			Position = UDim2.new(0.5,0,0.5,0),
 			Parent = screen
 		}
@@ -4102,7 +4102,7 @@ function sections:configloader(props)
 			BorderColor3 = Color3.fromRGB(12, 12, 12),
 			BorderMode = "Inset",
 			BorderSizePixel = 1,
-			Size = UDim2.new(0,650,0,650),
+			Size = UDim2.new(1,0,1,0),
 			Parent = clholder
 		}
 	)
